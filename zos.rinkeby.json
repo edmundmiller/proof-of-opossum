@@ -207,7 +207,15 @@
     }
   },
   "solidityLibs": {},
-  "proxies": {},
+  "proxies": {
+    "zepkit/LeaderBoard": [
+      {
+        "address": "0xAc733bEB3f721476b1b6ae1027FC380962fA40Eb",
+        "version": "0.1.0",
+        "implementation": "0x48F813F80A36F86d0F1e62096dE5a155FaA7B046"
+      }
+    ]
+  },
   "zosversion": "2.2",
   "version": "0.1.0",
   "dependencies": {
@@ -215,5 +223,8 @@
       "package": "0xa44bb80b290de8a465d17b14269df53cf0b9bf4f",
       "version": "2.1.3"
     }
+  },
+  "proxyAdmin": {
+    "address": "0x6D727B9ABb453C051C347C74a6EA9fbBEb8694F9"
   }
 }
