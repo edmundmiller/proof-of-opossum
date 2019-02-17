@@ -19,14 +19,14 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
     mapping(address => bool) public IsInTheBoard;
 
     function newStatusName(bytes32 name) public {
-        require(IsInTheBoard(msg.sender) != true);
+        require(IsInTheBoard[msg.sender] != true);
         StatusName storage newName = TheBoard[next_nameId];
 
         newName.addr = msg.sender;
         newName.amount = 0;
         newName.name = name;
 
-        IsInTheBoard(msg.sender) = true;
+        IsInTheBoard[msg.sender] = true;
         emit Creation(newName.addr, newName.amount, newName.name, next_nameId);
         next_nameId ++;
         tokenMint(msg.sender);
@@ -43,7 +43,11 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
         emit Vote(msg.sender, nameId, TheBoard[nameId].name, TheBoard[nameId].amount);
     }
 
-    function loadStatus(uint256 nameId) public {
-        return TheBoard[nameId];
+    function loadStatus(uint256 nameId) public view returns (address addr, uint256 votes, bytes32 name) {
+        address addr = TheBoard[nameId].addr;
+        uint256 votes = TheBoard[nameId].amount;
+        bytes32 name = TheBoard[nameId].name;
+
+
     }
 }
