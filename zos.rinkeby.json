@@ -1,0 +1,219 @@
+{
+  "contracts": {
+    "LeaderBoard": {
+      "address": "0x48F813F80A36F86d0F1e62096dE5a155FaA7B046",
+      "constructorCode": "6080604052600060ff5534801561001557600080fd5b50611faa806100256000396000f3fe",
+      "bodyBytecodeHash": "6fb0a7a1dedcfff593cdde705a34c86be687281f820e5c156fe849b12f3c6521",
+      "localBytecodeHash": "93c28a4b156293e69ff75e878a8d3340ddf922dbd38865e05c8168c9d5338a25",
+      "deployedBytecodeHash": "93c28a4b156293e69ff75e878a8d3340ddf922dbd38865e05c8168c9d5338a25",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 150,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:1"
+            }
+          ]
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_struct<LeaderBoard.StatusName>": {
+          "id": "t_struct<LeaderBoard.StatusName>",
+          "kind": "struct",
+          "label": "LeaderBoard.StatusName",
+          "members": [
+            {
+              "label": "addr",
+              "astId": 35,
+              "type": "t_address",
+              "src": "457:12:0"
+            },
+            {
+              "label": "amount",
+              "astId": 37,
+              "type": "t_uint256",
+              "src": "479:11:0"
+            },
+            {
+              "label": "name",
+              "astId": 39,
+              "type": "t_bytes32",
+              "src": "500:12:0"
+            }
+          ]
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_mapping<t_struct<LeaderBoard.StatusName>>": {
+          "id": "t_mapping<t_struct<LeaderBoard.StatusName>>",
+          "valueType": "t_struct<LeaderBoard.StatusName>",
+          "label": "mapping(key => LeaderBoard.StatusName)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 1084,
+          "type": "t_bool",
+          "src": "757:24:8"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 1086,
+          "type": "t_bool",
+          "src": "876:25:8"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 1135,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:8"
+        },
+        {
+          "contract": "ERC20",
+          "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
+          "label": "_balances",
+          "astId": 501,
+          "type": "t_mapping<t_uint256>",
+          "src": "774:46:4"
+        },
+        {
+          "contract": "ERC20",
+          "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
+          "label": "_allowed",
+          "astId": 507,
+          "type": "t_mapping<t_uint256>",
+          "src": "827:66:4"
+        },
+        {
+          "contract": "ERC20",
+          "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
+          "label": "_totalSupply",
+          "astId": 509,
+          "type": "t_uint256",
+          "src": "900:28:4"
+        },
+        {
+          "contract": "ERC20",
+          "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
+          "label": "______gap",
+          "astId": 923,
+          "type": "t_array:50<t_uint256>",
+          "src": "7661:29:4"
+        },
+        {
+          "contract": "ERC20Burnable",
+          "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol",
+          "label": "______gap",
+          "astId": 961,
+          "type": "t_array:50<t_uint256>",
+          "src": "784:29:5"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
+          "label": "_minters",
+          "astId": 257,
+          "type": "t_struct<Roles.Role>",
+          "src": "271:27:2"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
+          "label": "______gap",
+          "astId": 356,
+          "type": "t_array:50<t_uint256>",
+          "src": "1081:29:2"
+        },
+        {
+          "contract": "ERC20Mintable",
+          "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol",
+          "label": "______gap",
+          "astId": 1010,
+          "type": "t_array:50<t_uint256>",
+          "src": "745:29:6"
+        },
+        {
+          "contract": "LeaderBoard",
+          "path": "contracts/LeaderBoard.sol",
+          "label": "next_nameId",
+          "astId": 43,
+          "type": "t_uint256",
+          "src": "525:20:0"
+        },
+        {
+          "contract": "LeaderBoard",
+          "path": "contracts/LeaderBoard.sol",
+          "label": "TheBoard",
+          "astId": 47,
+          "type": "t_mapping<t_struct<LeaderBoard.StatusName>>",
+          "src": "551:43:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": true,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {},
+  "zosversion": "2.2",
+  "version": "0.1.0",
+  "dependencies": {
+    "openzeppelin-eth": {
+      "package": "0xa44bb80b290de8a465d17b14269df53cf0b9bf4f",
+      "version": "2.1.3"
+    }
+  }
+}
