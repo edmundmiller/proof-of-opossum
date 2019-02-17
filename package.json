@@ -29,5 +29,9 @@
     "truffle": "5.0.4",
     "truffle-hdwallet-provider": "^1.0.3",
     "zos-lib": "2.2.0"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.7.3",
+    "@graphprotocol/graph-ts": "^0.5.1"
   }
 }
