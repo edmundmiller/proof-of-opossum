@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-description: Gravatar for Ethereum
+description: Status Nickname Voting dApp
 repository: https://github.com/rodventures/gravity-subgraph
 schema:
   file: ./schema.graphql
@@ -8,7 +8,7 @@ dataSources:
     name: LeaderBoard
     network: rinkeby
     source:
-      address: '0x2E645469f354BB4F5c8a05B3b30A929361cf77eC'
+      address: '0x48F813F80A36F86d0F1e62096dE5a155FaA7B046'
       abi: LeaderBoard
     mapping:
       kind: ethereum/events
