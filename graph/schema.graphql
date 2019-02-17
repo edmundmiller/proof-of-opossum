@@ -1,0 +1,8 @@
+type StatusName @entity {
+  id: ID!
+  owner: Bytes!
+  displayName: Bytes!
+  amount: BigInt!
+}
+
+
