@@ -4,6 +4,9 @@ import 'openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol';
 import 'openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol';
 
 contract LeaderBoard is ERC20Burnable, ERC20Mintable {
+    event Creation(address indexed _from, uint keyId);
+    event Request(address indexed _from, uint keyId);
+    event Authorize(address indexed _from, uint keyId, address node);
 
     struct StatusName {
         address addr;
@@ -30,8 +33,7 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
     }
 
     function vote(uint nameId) public {
-        require(balanceOf(msg.sender) >= 1, "Not enough tokens");
         burnFrom(msg.sender, 1);
-        TheBoard[next_nameId].amount ++;
+        TheBoard[nameId].amount ++;
     }
 }
