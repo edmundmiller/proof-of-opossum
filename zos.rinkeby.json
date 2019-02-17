@@ -1,11 +1,11 @@
 {
   "contracts": {
     "LeaderBoard": {
-      "address": "0x3F1EdAf84a86466C76B493CC9769ed20da269CE3",
-      "constructorCode": "6080604052600060ff5534801561001557600080fd5b50611f73806100256000396000f3fe",
-      "bodyBytecodeHash": "cbbebcfb9526ddbf5d39d9c7abc54278e7aab1b9030c6fbe29a174fe62f6fe18",
-      "localBytecodeHash": "c05bc8d4b484ac31bda0e25415c575926eaa149b6b6478e1b58c89c40ecd04a0",
-      "deployedBytecodeHash": "c05bc8d4b484ac31bda0e25415c575926eaa149b6b6478e1b58c89c40ecd04a0",
+      "address": "0x7862079Adc9512578EA6E18bdFCc41d6228759a1",
+      "constructorCode": "6080604052600060ff5534801561001557600080fd5b50611f72806100256000396000f3fe",
+      "bodyBytecodeHash": "e4cdea433ee2d9d9ae4c7ff1d8391f4bb03dcf4bb4013bdafa738f5c3fd7f2fb",
+      "localBytecodeHash": "3e490085c85b6d068292bc426d4e2c544a032e86514b8af37afc52c2b02016a7",
+      "deployedBytecodeHash": "3e490085c85b6d068292bc426d4e2c544a032e86514b8af37afc52c2b02016a7",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -37,7 +37,7 @@
           "members": [
             {
               "label": "bearer",
-              "astId": 151,
+              "astId": 149,
               "type": "t_mapping<t_bool>",
               "src": "150:32:1"
             }
@@ -96,7 +96,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 1085,
+          "astId": 1083,
           "type": "t_bool",
           "src": "757:24:8"
         },
@@ -104,7 +104,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 1087,
+          "astId": 1085,
           "type": "t_bool",
           "src": "876:25:8"
         },
@@ -112,7 +112,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 1136,
+          "astId": 1134,
           "type": "t_array:50<t_uint256>",
           "src": "1891:29:8"
         },
@@ -120,7 +120,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_balances",
-          "astId": 502,
+          "astId": 500,
           "type": "t_mapping<t_uint256>",
           "src": "774:46:4"
         },
@@ -128,7 +128,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_allowed",
-          "astId": 508,
+          "astId": 506,
           "type": "t_mapping<t_uint256>",
           "src": "827:66:4"
         },
@@ -136,7 +136,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_totalSupply",
-          "astId": 510,
+          "astId": 508,
           "type": "t_uint256",
           "src": "900:28:4"
         },
@@ -144,7 +144,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "______gap",
-          "astId": 924,
+          "astId": 922,
           "type": "t_array:50<t_uint256>",
           "src": "7661:29:4"
         },
@@ -152,7 +152,7 @@
           "contract": "ERC20Burnable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol",
           "label": "______gap",
-          "astId": 962,
+          "astId": 960,
           "type": "t_array:50<t_uint256>",
           "src": "784:29:5"
         },
@@ -160,7 +160,7 @@
           "contract": "MinterRole",
           "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
           "label": "_minters",
-          "astId": 258,
+          "astId": 256,
           "type": "t_struct<Roles.Role>",
           "src": "271:27:2"
         },
@@ -168,7 +168,7 @@
           "contract": "MinterRole",
           "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
           "label": "______gap",
-          "astId": 357,
+          "astId": 355,
           "type": "t_array:50<t_uint256>",
           "src": "1081:29:2"
         },
@@ -176,7 +176,7 @@
           "contract": "ERC20Mintable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol",
           "label": "______gap",
-          "astId": 1011,
+          "astId": 1009,
           "type": "t_array:50<t_uint256>",
           "src": "745:29:6"
         },
@@ -208,7 +208,7 @@
             "contract": "MinterRole",
             "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
             "label": "_minters",
-            "astId": 258,
+            "astId": 256,
             "type": "t_struct<Roles.Role>",
             "src": "271:27:2"
           },
@@ -237,6 +237,11 @@
         "address": "0xE61E1021c7017a7D851CC07B3c984A24867f0EA4",
         "version": "0.1.0",
         "implementation": "0x3F1EdAf84a86466C76B493CC9769ed20da269CE3"
+      },
+      {
+        "address": "0x95cFC71725856857677815227eE24a2A242daE36",
+        "version": "0.1.0",
+        "implementation": "0x7862079Adc9512578EA6E18bdFCc41d6228759a1"
       }
     ]
   },

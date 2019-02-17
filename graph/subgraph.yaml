@@ -8,7 +8,7 @@ dataSources:
     name: LeaderBoard
     network: rinkeby
     source:
-      address: '0x3F1EdAf84a86466C76B493CC9769ed20da269CE3'
+      address: '0x7862079Adc9512578EA6E18bdFCc41d6228759a1'
       abi: LeaderBoard
     mapping:
       kind: ethereum/events
@@ -22,4 +22,6 @@ dataSources:
       eventHandlers:
         - event: Creation(address,uint256,bytes32,uint256)
           handler: handleCreation
+        - event: Vote(address,uint256,bytes32,uint256)
+          handler: handleUpdatedStatusName
       file: ./src/mapping.ts

@@ -19,3 +19,13 @@ zos create LeaderBoard
 ### Issue
 The rinkeby network used process.env.MNENOMIC instead of mnemonic. Same thing
 with infura. Also could not push directly to networks had to run a session
+
+
+### Deploy a new version
+
+1.) Update your Contract
+2.) run `yarn zos-all`
+3.) `cd graph`
+4.) change `subgraph.yaml`
+4.) change `mappings.ts`
+

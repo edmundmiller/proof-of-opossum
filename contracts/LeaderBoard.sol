@@ -35,7 +35,7 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
     }
 
     function vote(uint nameId) public {
-        burnFrom(msg.sender, 1);
+        burn(1);
         TheBoard[nameId].amount ++;
         emit Vote(msg.sender, nameId, TheBoard[nameId].name, TheBoard[nameId].amount);
     }
