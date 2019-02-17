@@ -8,7 +8,7 @@ dataSources:
     name: LeaderBoard
     network: rinkeby
     source:
-      address: '0x7862079Adc9512578EA6E18bdFCc41d6228759a1'
+      address: '0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246'
       abi: LeaderBoard
     mapping:
       kind: ethereum/events

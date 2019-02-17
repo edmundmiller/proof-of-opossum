@@ -1,11 +1,11 @@
 {
   "contracts": {
     "LeaderBoard": {
-      "address": "0x7862079Adc9512578EA6E18bdFCc41d6228759a1",
-      "constructorCode": "6080604052600060ff5534801561001557600080fd5b50611f72806100256000396000f3fe",
-      "bodyBytecodeHash": "e4cdea433ee2d9d9ae4c7ff1d8391f4bb03dcf4bb4013bdafa738f5c3fd7f2fb",
-      "localBytecodeHash": "3e490085c85b6d068292bc426d4e2c544a032e86514b8af37afc52c2b02016a7",
-      "deployedBytecodeHash": "3e490085c85b6d068292bc426d4e2c544a032e86514b8af37afc52c2b02016a7",
+      "address": "0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246",
+      "constructorCode": "6080604052600060ff5534801561001557600080fd5b506121d7806100256000396000f3fe",
+      "bodyBytecodeHash": "6629f223b6b870774a984d8c8ab83b0c07ce5f851d26cd638f3b9eea4d5dfd22",
+      "localBytecodeHash": "97e0c6022cbaea736df4529227edebed482ae0d7bedff57646b9cfa356975a30",
+      "deployedBytecodeHash": "97e0c6022cbaea736df4529227edebed482ae0d7bedff57646b9cfa356975a30",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -37,7 +37,7 @@
           "members": [
             {
               "label": "bearer",
-              "astId": 149,
+              "astId": 202,
               "type": "t_mapping<t_bool>",
               "src": "150:32:1"
             }
@@ -58,19 +58,19 @@
               "label": "addr",
               "astId": 35,
               "type": "t_address",
-              "src": "457:12:0"
+              "src": "461:12:0"
             },
             {
               "label": "amount",
               "astId": 37,
               "type": "t_uint256",
-              "src": "479:11:0"
+              "src": "483:14:0"
             },
             {
               "label": "name",
               "astId": 39,
               "type": "t_bytes32",
-              "src": "500:12:0"
+              "src": "507:12:0"
             }
           ]
         },
@@ -96,7 +96,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 1083,
+          "astId": 1136,
           "type": "t_bool",
           "src": "757:24:8"
         },
@@ -104,7 +104,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 1085,
+          "astId": 1138,
           "type": "t_bool",
           "src": "876:25:8"
         },
@@ -112,7 +112,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 1134,
+          "astId": 1187,
           "type": "t_array:50<t_uint256>",
           "src": "1891:29:8"
         },
@@ -120,7 +120,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_balances",
-          "astId": 500,
+          "astId": 553,
           "type": "t_mapping<t_uint256>",
           "src": "774:46:4"
         },
@@ -128,7 +128,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_allowed",
-          "astId": 506,
+          "astId": 559,
           "type": "t_mapping<t_uint256>",
           "src": "827:66:4"
         },
@@ -136,7 +136,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_totalSupply",
-          "astId": 508,
+          "astId": 561,
           "type": "t_uint256",
           "src": "900:28:4"
         },
@@ -144,7 +144,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "______gap",
-          "astId": 922,
+          "astId": 975,
           "type": "t_array:50<t_uint256>",
           "src": "7661:29:4"
         },
@@ -152,7 +152,7 @@
           "contract": "ERC20Burnable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol",
           "label": "______gap",
-          "astId": 960,
+          "astId": 1013,
           "type": "t_array:50<t_uint256>",
           "src": "784:29:5"
         },
@@ -160,7 +160,7 @@
           "contract": "MinterRole",
           "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
           "label": "_minters",
-          "astId": 256,
+          "astId": 309,
           "type": "t_struct<Roles.Role>",
           "src": "271:27:2"
         },
@@ -168,7 +168,7 @@
           "contract": "MinterRole",
           "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
           "label": "______gap",
-          "astId": 355,
+          "astId": 408,
           "type": "t_array:50<t_uint256>",
           "src": "1081:29:2"
         },
@@ -176,7 +176,7 @@
           "contract": "ERC20Mintable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol",
           "label": "______gap",
-          "astId": 1009,
+          "astId": 1062,
           "type": "t_array:50<t_uint256>",
           "src": "745:29:6"
         },
@@ -186,7 +186,7 @@
           "label": "next_nameId",
           "astId": 43,
           "type": "t_uint256",
-          "src": "525:20:0"
+          "src": "532:23:0"
         },
         {
           "contract": "LeaderBoard",
@@ -194,7 +194,15 @@
           "label": "TheBoard",
           "astId": 47,
           "type": "t_mapping<t_struct<LeaderBoard.StatusName>>",
-          "src": "551:43:0"
+          "src": "561:43:0"
+        },
+        {
+          "contract": "LeaderBoard",
+          "path": "contracts/LeaderBoard.sol",
+          "label": "IsInTheBoard",
+          "astId": 51,
+          "type": "t_mapping<t_bool>",
+          "src": "610:44:0"
         }
       ],
       "warnings": {
@@ -208,7 +216,7 @@
             "contract": "MinterRole",
             "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
             "label": "_minters",
-            "astId": 256,
+            "astId": 309,
             "type": "t_struct<Roles.Role>",
             "src": "271:27:2"
           },
@@ -218,10 +226,23 @@
             "label": "TheBoard",
             "astId": 47,
             "type": "t_mapping<t_struct<LeaderBoard.StatusName>>",
-            "src": "551:43:0"
+            "src": "561:43:0"
           }
         ],
-        "storageDiff": []
+        "storageDiff": [
+          {
+            "action": "append",
+            "updated": {
+              "index": 13,
+              "contract": "LeaderBoard",
+              "path": "contracts/LeaderBoard.sol",
+              "label": "IsInTheBoard",
+              "astId": 51,
+              "type": "t_mapping<t_bool>",
+              "src": "610:44:0"
+            }
+          }
+        ]
       }
     }
   },
@@ -242,6 +263,11 @@
         "address": "0x95cFC71725856857677815227eE24a2A242daE36",
         "version": "0.1.0",
         "implementation": "0x7862079Adc9512578EA6E18bdFCc41d6228759a1"
+      },
+      {
+        "address": "0xfB5875C6Fd448Bb220cf1067bCc7F5cC539bdCf6",
+        "version": "0.1.0",
+        "implementation": "0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246"
       }
     ]
   },

@@ -35,7 +35,7 @@ export class CreationParams {
     return this._event.parameters[2].value.toBytes();
   }
 
-  get Id(): BigInt {
+  get nameId(): BigInt {
     return this._event.parameters[3].value.toBigInt();
   }
 }
@@ -200,6 +200,26 @@ export class LeaderBoard__TheBoardResult {
   }
 }
 
+export class LeaderBoard__loadStatusResult {
+  value0: Address;
+  value1: BigInt;
+  value2: Bytes;
+
+  constructor(value0: Address, value1: BigInt, value2: Bytes) {
+    this.value0 = value0;
+    this.value1 = value1;
+    this.value2 = value2;
+  }
+
+  toMap(): TypedMap<string, EthereumValue> {
+    let map = new TypedMap<string, EthereumValue>();
+    map.set("value0", EthereumValue.fromAddress(this.value0));
+    map.set("value1", EthereumValue.fromUnsignedBigInt(this.value1));
+    map.set("value2", EthereumValue.fromFixedBytes(this.value2));
+    return map;
+  }
+}
+
 export class LeaderBoard extends SmartContract {
   static bind(address: Address): LeaderBoard {
     return new LeaderBoard("LeaderBoard", address);
@@ -237,5 +257,23 @@ export class LeaderBoard extends SmartContract {
       EthereumValue.fromAddress(spender)
     ]);
     return result[0].toBigInt();
+  }
+
+  IsInTheBoard(param0: Address): boolean {
+    let result = super.call("IsInTheBoard", [
+      EthereumValue.fromAddress(param0)
+    ]);
+    return result[0].toBoolean();
+  }
+
+  loadStatus(nameId: BigInt): LeaderBoard__loadStatusResult {
+    let result = super.call("loadStatus", [
+      EthereumValue.fromUnsignedBigInt(nameId)
+    ]);
+    return new LeaderBoard__loadStatusResult(
+      result[0].toAddress(),
+      result[1].toBigInt(),
+      result[2].toBytes()
+    );
   }
 }

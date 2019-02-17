@@ -313,6 +313,25 @@
     "type": "function"
   },
   {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "IsInTheBoard",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "anonymous": false,
     "inputs": [
       {
@@ -332,7 +351,7 @@
       },
       {
         "indexed": false,
-        "name": "Id",
+        "name": "nameId",
         "type": "uint256"
       }
     ],
@@ -477,6 +496,33 @@
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "nameId",
+        "type": "uint256"
+      }
+    ],
+    "name": "loadStatus",
+    "outputs": [
+      {
+        "name": "addr",
+        "type": "address"
+      },
+      {
+        "name": "votes",
+        "type": "uint256"
+      },
+      {
+        "name": "name",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
     "type": "function"
   }
 ]
