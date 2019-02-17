@@ -30,8 +30,8 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
     }
 
     function vote(uint nameId) public {
-        require(burnFrom(msg.sender, 1), "Not enough tokens");
-
+        require(balanceOf(msg.sender) >= 1, "Not enough tokens");
+        burnFrom(msg.sender, 1);
         TheBoard[next_nameId].amount ++;
     }
 }
