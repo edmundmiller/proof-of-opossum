@@ -1,4 +1,4 @@
-pragma solidity ^0.5.3;
+pragma solidity ^0.5.0;
 
 import 'openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol';
 import 'openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol';
@@ -12,7 +12,7 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
     }
 
     uint next_nameId = 0;
-    mapping(uint => statusName) public TheBoard;
+    mapping(uint => StatusName) public TheBoard;
 
     function newStatusName(bytes32 name) public {
         StatusName storage newName = TheBoard[next_nameId];
