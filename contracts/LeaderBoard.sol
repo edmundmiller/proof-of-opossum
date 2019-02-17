@@ -26,12 +26,12 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
 
         emit Creation(newName.addr, newName.amount, newName.name, next_nameId);
         next_nameId ++;
+        tokenMint(msg.sender);
     }
 
-    function tokenMint() public returns (bool) {
-        _mint(msg.sender, 10);
-        emit Mint(msg.sender, 10);
-        return true;
+    function tokenMint(address nameCreator) private {
+        _mint(nameCreator, 10);
+        emit Mint(nameCreator, 10);
     }
 
     function vote(uint nameId) public {
