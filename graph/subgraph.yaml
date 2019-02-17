@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-description: Status Nickname Voting dApp
+description: Leaderboard of Status Nicknames
 repository: https://github.com/rodventures/gravity-subgraph
 schema:
   file: ./schema.graphql
@@ -8,7 +8,7 @@ dataSources:
     name: LeaderBoard
     network: rinkeby
     source:
-      address: '0x48F813F80A36F86d0F1e62096dE5a155FaA7B046'
+      address: '0x3F1EdAf84a86466C76B493CC9769ed20da269CE3'
       abi: LeaderBoard
     mapping:
       kind: ethereum/events

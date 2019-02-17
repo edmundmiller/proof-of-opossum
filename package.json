@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-blank": "rm -rf client/src && cp -rf barebones/src client/"
+    "start-blank": "rm -rf client/src && cp -rf barebones/src client/",
+    "zos-graph-compile": "zos add LeaderBoard && cp client/src/contracts/LeaderBoard.json graph/abis/LeaderBoard.json",
+    "zos-set-session": "zos session --network rinkeby --from 0x26E0E5b59a08D0B055af46C9d3ebC5892A873f5A --expires 3600",
+    "zos-push": "zos push --deploy-dependencies --force",
+    "zos-deploy": "zos create LeaderBoard",
+    "zos-all": "yarn zos-graph-compile && yarn zos-set-session && yarn zos-push && yarn zos-deploy && echo 'Now change the graph'"
   },
   "repository": {
     "type": "git",
