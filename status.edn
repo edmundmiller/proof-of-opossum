@@ -1,0 +1,51 @@
+{meta
+ {:name          "Proof of Opossum"
+  :description   "Leaderboard of Status Nicknames"
+  :documentation "Commands to interract with Proof of Opossum"}
+
+ events/vote-opossum
+ (let [{id :id} properties]
+   [ethereum/send-transaction {:to "0x7862079Adc9512578EA6E18bdFCc41d6228759a1" :method "vote(uint256)" :params [id] :on-success [alert] :on-result [alert]}])
+
+ views/preview
+ (let [{{{id :id} :params} :content} properties
+       {title :title} [store/get {:key "opossum-${id}"}]]
+   [view
+    [text "Title ${title} ${id}"]
+    [button {:on-click [vote-opossum {:id id}]}
+     "Upvote for ${id}"]])
+
+ views/short-preview
+ (let [{{{id :id} :params} :content} properties]
+  [text "Vote for ${id}"])
+
+ events/store-oposs
+ (let [{value :value id :id} properties]
+   [store/put {:key "opossum-${id}" :value value}])
+
+ events/parse-oposs
+ (let [{value :value id :id} properties]
+   [json/parse {:value value :on-result [store-oposs {:id id}]}])
+
+ events/cat-oposs
+ (let [{[_ description] :result id :id} properties]
+   [ipfs/cat {:hash description :on-success [parse-oposs {:id id}]}])
+
+ events/load-opossum
+ (let [{{{id :id} :params} :content} properties]
+   [ethereum/call {:to        "0x7862079Adc9512578EA6E18bdFCc41d6228759a1"
+                   :method    "loadStatus(uint256)"
+                   :params    [id]
+                   :outputs   ["address" "amount" "name"]
+                   :on-success [cat-oposs {:id id}]}])
+
+ hooks/chat.command.vote
+ {:description   "Opossum vote"
+  :scope         #{:personal-chats}
+  :preview       [preview]
+  :short-preview [short-preview]
+  :on-send       [load-opossum]
+  :parameters    [{:id          :id
+                   :type        :text
+                   :placeholder "Vote id"}]}
+}
