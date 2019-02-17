@@ -14,6 +14,7 @@ contract LeaderBoard is ERC20Burnable, ERC20Mintable {
         bytes32 name;
     }
 
+    uint256 x=4;
     uint256 next_nameId = 0;
     mapping(uint => StatusName) public TheBoard;
     mapping(address => bool) public IsInTheBoard;

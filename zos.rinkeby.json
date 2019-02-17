@@ -1,11 +1,11 @@
 {
   "contracts": {
     "LeaderBoard": {
-      "address": "0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246",
-      "constructorCode": "6080604052600060ff5534801561001557600080fd5b506121d7806100256000396000f3fe",
-      "bodyBytecodeHash": "6629f223b6b870774a984d8c8ab83b0c07ce5f851d26cd638f3b9eea4d5dfd22",
-      "localBytecodeHash": "97e0c6022cbaea736df4529227edebed482ae0d7bedff57646b9cfa356975a30",
-      "deployedBytecodeHash": "97e0c6022cbaea736df4529227edebed482ae0d7bedff57646b9cfa356975a30",
+      "address": "0x4d4EA1f3B8fb122Db0070dF059580331597d2d32",
+      "constructorCode": "6080604052600460ff5560006101005534801561001b57600080fd5b506121da8061002b6000396000f3fe",
+      "bodyBytecodeHash": "3a1f5c5704e65cff5be6c383c6abec66c5c79bc33a86b9abc3a40b973255ea43",
+      "localBytecodeHash": "170ac3075f75baf24ccc4489e52e73063e39ebbebf08a71e94689270648fbee8",
+      "deployedBytecodeHash": "170ac3075f75baf24ccc4489e52e73063e39ebbebf08a71e94689270648fbee8",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -37,7 +37,7 @@
           "members": [
             {
               "label": "bearer",
-              "astId": 202,
+              "astId": 205,
               "type": "t_mapping<t_bool>",
               "src": "150:32:1"
             }
@@ -96,7 +96,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 1136,
+          "astId": 1139,
           "type": "t_bool",
           "src": "757:24:8"
         },
@@ -104,7 +104,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 1138,
+          "astId": 1141,
           "type": "t_bool",
           "src": "876:25:8"
         },
@@ -112,7 +112,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 1187,
+          "astId": 1190,
           "type": "t_array:50<t_uint256>",
           "src": "1891:29:8"
         },
@@ -120,7 +120,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_balances",
-          "astId": 553,
+          "astId": 556,
           "type": "t_mapping<t_uint256>",
           "src": "774:46:4"
         },
@@ -128,7 +128,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_allowed",
-          "astId": 559,
+          "astId": 562,
           "type": "t_mapping<t_uint256>",
           "src": "827:66:4"
         },
@@ -136,7 +136,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "_totalSupply",
-          "astId": 561,
+          "astId": 564,
           "type": "t_uint256",
           "src": "900:28:4"
         },
@@ -144,7 +144,7 @@
           "contract": "ERC20",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20.sol",
           "label": "______gap",
-          "astId": 975,
+          "astId": 978,
           "type": "t_array:50<t_uint256>",
           "src": "7661:29:4"
         },
@@ -152,7 +152,7 @@
           "contract": "ERC20Burnable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Burnable.sol",
           "label": "______gap",
-          "astId": 1013,
+          "astId": 1016,
           "type": "t_array:50<t_uint256>",
           "src": "784:29:5"
         },
@@ -160,7 +160,7 @@
           "contract": "MinterRole",
           "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
           "label": "_minters",
-          "astId": 309,
+          "astId": 312,
           "type": "t_struct<Roles.Role>",
           "src": "271:27:2"
         },
@@ -168,7 +168,7 @@
           "contract": "MinterRole",
           "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
           "label": "______gap",
-          "astId": 408,
+          "astId": 411,
           "type": "t_array:50<t_uint256>",
           "src": "1081:29:2"
         },
@@ -176,33 +176,41 @@
           "contract": "ERC20Mintable",
           "path": "openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol",
           "label": "______gap",
-          "astId": 1062,
+          "astId": 1065,
           "type": "t_array:50<t_uint256>",
           "src": "745:29:6"
         },
         {
           "contract": "LeaderBoard",
           "path": "contracts/LeaderBoard.sol",
-          "label": "next_nameId",
+          "label": "x",
           "astId": 43,
           "type": "t_uint256",
-          "src": "532:23:0"
+          "src": "532:11:0"
+        },
+        {
+          "contract": "LeaderBoard",
+          "path": "contracts/LeaderBoard.sol",
+          "label": "next_nameId",
+          "astId": 46,
+          "type": "t_uint256",
+          "src": "549:23:0"
         },
         {
           "contract": "LeaderBoard",
           "path": "contracts/LeaderBoard.sol",
           "label": "TheBoard",
-          "astId": 47,
+          "astId": 50,
           "type": "t_mapping<t_struct<LeaderBoard.StatusName>>",
-          "src": "561:43:0"
+          "src": "578:43:0"
         },
         {
           "contract": "LeaderBoard",
           "path": "contracts/LeaderBoard.sol",
           "label": "IsInTheBoard",
-          "astId": 51,
+          "astId": 54,
           "type": "t_mapping<t_bool>",
-          "src": "610:44:0"
+          "src": "627:44:0"
         }
       ],
       "warnings": {
@@ -216,7 +224,7 @@
             "contract": "MinterRole",
             "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
             "label": "_minters",
-            "astId": 309,
+            "astId": 312,
             "type": "t_struct<Roles.Role>",
             "src": "271:27:2"
           },
@@ -224,22 +232,22 @@
             "contract": "LeaderBoard",
             "path": "contracts/LeaderBoard.sol",
             "label": "TheBoard",
-            "astId": 47,
+            "astId": 50,
             "type": "t_mapping<t_struct<LeaderBoard.StatusName>>",
-            "src": "561:43:0"
+            "src": "578:43:0"
           }
         ],
         "storageDiff": [
           {
-            "action": "append",
+            "action": "insert",
             "updated": {
-              "index": 13,
+              "index": 11,
               "contract": "LeaderBoard",
               "path": "contracts/LeaderBoard.sol",
-              "label": "IsInTheBoard",
-              "astId": 51,
-              "type": "t_mapping<t_bool>",
-              "src": "610:44:0"
+              "label": "x",
+              "astId": 43,
+              "type": "t_uint256",
+              "src": "532:11:0"
             }
           }
         ]
@@ -268,6 +276,41 @@
         "address": "0xfB5875C6Fd448Bb220cf1067bCc7F5cC539bdCf6",
         "version": "0.1.0",
         "implementation": "0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246"
+      },
+      {
+        "address": "0x5ce842f879B65E1baD2C945305C5c863c70546a6",
+        "version": "0.1.0",
+        "implementation": "0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246"
+      },
+      {
+        "address": "0xfe4024588401B8462F3BC12b3064E82fFd0269AF",
+        "version": "0.1.0",
+        "implementation": "0x5B6EeED5D3fb6F278FB0FfA6a995B0De6a80c246"
+      },
+      {
+        "address": "0x67ACFFA52DBFfd7b8D43d5A4BF6Ec541ECeAbb3f",
+        "version": "0.1.0",
+        "implementation": "0x36746466833222e25E23a48a92906e474818d9d0"
+      },
+      {
+        "address": "0x528C8136dC0332e9ee6FcE1ccfEDDB9EDD284Dad",
+        "version": "0.1.0",
+        "implementation": "0x36746466833222e25E23a48a92906e474818d9d0"
+      },
+      {
+        "address": "0xE2eFdCB91f137bF2d0Cb991c60c09b9fe8330502",
+        "version": "0.1.0",
+        "implementation": "0x0ca869c624E9452BCd440Cb3Da94E082B8A4C286"
+      },
+      {
+        "address": "0x162aadca4Cc9d62463842862197606B5523AE285",
+        "version": "0.1.0",
+        "implementation": "0x1b1F8f93eA377668353740fdAf71Ce7B00578F7B"
+      },
+      {
+        "address": "0x43608eEB8C72F567496151b2b8EbE4f529705C6e",
+        "version": "0.1.0",
+        "implementation": "0x4d4EA1f3B8fb122Db0070dF059580331597d2d32"
       }
     ]
   },

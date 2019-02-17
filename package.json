@@ -11,7 +11,8 @@
     "zos-push": "zos push --deploy-dependencies --force",
     "zos-deploy": "zos create LeaderBoard",
     "zos-all": "yarn zos-graph-compile && yarn zos-set-session && yarn zos-push && yarn zos-deploy && echo 'Now change the graph'",
-    "graph-redeploy": "cd graph && yarn codegen && yarn deploy"
+    "graph-redeploy": "cd graph && yarn codegen && yarn deploy",
+    "install-zos-graph": "yarn && cd graph && yarn"
   },
   "repository": {
     "type": "git",
