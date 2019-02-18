@@ -5,7 +5,7 @@
 
  events/vote-opossum
  (let [{id :id} properties]
-   [ethereum/send-transaction {:to "0x7862079Adc9512578EA6E18bdFCc41d6228759a1" :method "vote(uint256)" :params [id] :on-success [alert] :on-result [alert]}])
+   [ethereum/send-transaction {:to "0x1b1F8f93eA377668353740fdAf71Ce7B00578F7B" :gas "100000" :method "vote(uint256)" :params [id] :on-success [alert] :on-result [alert]}])
 
  views/preview
  (let [{{{id :id} :params} :content} properties
@@ -33,10 +33,10 @@
 
  events/load-opossum
  (let [{{{id :id} :params} :content} properties]
-   [ethereum/call {:to        "0x7862079Adc9512578EA6E18bdFCc41d6228759a1"
+   [ethereum/call {:to        "0x1b1F8f93eA377668353740fdAf71Ce7B00578F7B"
                    :method    "loadStatus(uint256)"
                    :params    [id]
-                   :outputs   ["address" "amount" "name"]
+                   :outputs   ["address" "unit256" "bytes32"]
                    :on-success [cat-oposs {:id id}]}])
 
  hooks/chat.command.vote
@@ -47,5 +47,4 @@
   :on-send       [load-opossum]
   :parameters    [{:id          :id
                    :type        :text
-                   :placeholder "Vote id"}]}
-}
+                   :placeholder "Vote id"}]}}
